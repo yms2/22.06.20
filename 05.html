@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+    </script>
+    <ul>
+        <li class="html">HTML</li>
+        <li class="html">HTML</li>
+        <li class="html">HTML</li>
+        <li class="css">CSS</li>
+        <li class="css3">CSS3</li>
+        <li class="javascript">javascript</li>
+        <li class="jquery">jQuery</li>
+        <li class="blank"></li>
+    </ul>
+
+    <script>
+        'use strict'
+
+        // const li = document.getElementsByTagName("li")[1];
+        // const li01 = document.getElementsByTagName("li")[1];
+        // console.log(li);
+        // console.log(li[1]);
+        // console.log(li.length);
+        // li.style.backgroundColor = '#666';
+
+        // for(let i = 0;i<li.length; i++){
+        //     li[i].style.backgroundColor = '#666'
+        // }
+
+        // const html = document.getElementsByClassName('html');
+        // console.log(html);
+        // console.log(html[0]);
+        // html[0].style.backgroundColor='#666'
+        // html[1].style.backgroundColor='#000'
+        // html[2].style.backgroundColor='#ccc'
+
+        // const tutorial = document.getElementById('tutorial');
+        // tutorial.style.backgroundColor='#ccc'
+
+        // const li = document.querySelector("#tutorial > li")
+        // li.style.backgroundColor = '#666'
+
+        const li = document.querySelectorAll("#tutorial > li")
+        for(let i = 0; i<li.length; i++){
+            li[i].style.backgroundColor = '#666'
+            if(li[i].textContent == 'HTML' || li[i].textContent == 'CSS'){
+                li[i].style.backgroundColor = '#000'
+            }
+        }
+    </script>
+</body>
+</html>
